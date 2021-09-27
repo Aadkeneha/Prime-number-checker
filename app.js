@@ -17,13 +17,13 @@ function checkprimenumber(cnum){
         for(var i=2;i<=m;i++){      
             if(pnum%i==0){      
              result.innerText="The given number is not a prime number."   
-             count=1;      
+             var count=1;      
              break;      
             }  
         }
     }
 
-    if (count===0){
+    if (count==0 && number!=0){
         result.innerText="The given number is a prime number."
     }
 }
